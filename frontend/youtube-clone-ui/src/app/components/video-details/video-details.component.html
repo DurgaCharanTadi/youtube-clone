@@ -1,0 +1,13 @@
+<div fxLayout="row wrap">
+  <div fxFlex="65%" class="video-player-mainDiv">
+    <div class="video-player">
+      <app-video-player *ngIf="videoAvailable" [videoUrl]="videoUrl"></app-video-player>
+    </div>
+    <h2>{{videoTitle}}</h2>
+    <p>{{videoDescription}}</p>
+  </div>
+  <div fxFlex="35%">
+      Hi
+  </div>
+</div>
+

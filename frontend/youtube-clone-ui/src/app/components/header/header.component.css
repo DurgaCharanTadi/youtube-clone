@@ -1,0 +1,41 @@
+.primaryNavRow{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -2px 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.primaryNav{
+  min-height: 55px!important;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#contact{
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#resume{
+  color: #fff;
+  background: #0057ff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+}
+.dct-logo{
+  height: 25px;
+}
+.yt-logo{
+  height: 32px;
+  padding-right: 5px;
+}
+.youtube-logo{
+  display: flex;
+  flex-direction: row;
+}
+#video_call_logo{
+  padding-right: 10px;
+}
+#video_call_logo:hover{
+  cursor: pointer;
+}

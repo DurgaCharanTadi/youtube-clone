@@ -1,0 +1,15 @@
+<div class="home grid-container">
+  <mat-card *ngFor="let video of allVideos" class="example-card grid-item" appearance="outlined">
+    <img mat-card-image class="thumbnail" alt="Thumbnail" src={{video.thumbnailUrl}} />
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{video.title}}</mat-card-title>
+      <mat-card-subtitle>{{video.description}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <mat-card-subtitle>100K Views</mat-card-subtitle>
+      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-subtitle>1 day ago</mat-card-subtitle>
+    </mat-card-actions>
+  </mat-card>
+</div>

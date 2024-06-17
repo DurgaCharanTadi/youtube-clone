@@ -1,0 +1,50 @@
+<div fxLayout="row wrap">
+  <div fxFlex="20%">Hi</div>
+  <div fxFlex="30%">
+    <form [formGroup]="saveVideoDetailsForm">
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput [formControl]="title">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput [formControl]="description"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Video Status</mat-label>
+        <mat-select [formControl]="videoStatus">
+          <mat-option value="PUBLIC">PUBLIC</mat-option>
+          <mat-option value="PRIVATE">PRIVATE</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div>
+        <label for="inputGroupFile01"> Upload Thumbnail:
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFieldAddOn01" (change)="onFileSelected($event)">
+        </div>
+        <br/>
+        <div *ngIf="thumbnailSelected">
+          <p >Selected Files: {{this.selectedFileName}}</p>
+        </div>
+        <div *ngIf="thumbnailSelected">
+          <button mat-raised-button color="primary"
+                  type="submit"
+                  (click)="uploadThumbnail()">Upload</button>
+          <hr>
+        </div>
+        </label>
+      </div>
+      <div>
+        <button type="submit"
+                mat-raised-button
+                color="primary"
+                (click)="saveVideoDetails()">Save</button>
+      </div>
+    </form>
+  </div>
+  <div fxFlex="30%" class="video-player">
+    <app-video-player *ngIf="videoAvailable" [videoUrl]="videoUrl"></app-video-player>
+  </div>
+  <div fxFlex="20%">Hi</div>
+</div>

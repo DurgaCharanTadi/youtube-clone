@@ -1,0 +1,26 @@
+.example-card {
+  width: 30vw;
+  margin: 10px 10px;
+}
+.thumbnail{
+  height: 200px;
+}
+.example-header-image {
+  background-image: url('src/assets/images/channel-icon.png');
+  background-size: cover;
+}
+.mat-mdc-card-avatar{
+  margin-bottom: 0;
+}
+.mdc-card__actions{
+  padding: 0 8px 8px;
+}
+.home{
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

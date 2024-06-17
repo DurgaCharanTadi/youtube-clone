@@ -1,0 +1,16 @@
+<mat-toolbar class="primaryNav">
+  <mat-toolbar-row class="primaryNavRow">
+    <div><img src="assets/images/dct-logo.png" class="dct-logo"/></div>
+    <div class="youtube-logo">
+      <img src="assets/images/youtube-logo.png" class="yt-logo"/>
+      <h2>YouTube - Clone</h2>
+    </div>
+    <div>
+      <mat-icon id="video_call_logo" (click)="videoUploadPage()">video_call</mat-icon>
+      <mat-icon *ngIf="isAuthenticated; else NoAuth">account_circle</mat-icon>
+      <ng-template #NoAuth>
+        <button mat-raised-button (click)="login()">Login</button>
+      </ng-template>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
