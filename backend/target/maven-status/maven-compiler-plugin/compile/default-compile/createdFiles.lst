@@ -1,0 +1,14 @@
+com\dct\youtube_clone\repository\VideoRepository.class
+com\dct\youtube_clone\dto\UploadVideoResponse.class
+com\dct\youtube_clone\service\VideoService.class
+com\dct\youtube_clone\config\WebMVCConfig.class
+com\dct\youtube_clone\YoutubeCloneApplication.class
+com\dct\youtube_clone\model\User.class
+com\dct\youtube_clone\model\VideoStatus.class
+com\dct\youtube_clone\controller\VideoController.class
+com\dct\youtube_clone\dto\VideoDTO.class
+com\dct\youtube_clone\repository\UserRepository.class
+com\dct\youtube_clone\model\Comment.class
+com\dct\youtube_clone\service\FileService.class
+com\dct\youtube_clone\service\S3Service.class
+com\dct\youtube_clone\model\Video.class
