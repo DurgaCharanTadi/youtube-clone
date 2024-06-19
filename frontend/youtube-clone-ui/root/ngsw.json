@@ -1,0 +1,77 @@
+{
+  "configVersion": 1,
+  "timestamp": 1718803344673,
+  "index": "youtube-clone-ui/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "youtube-clone-ui/favicon.ico",
+        "youtube-clone-ui/index.html",
+        "youtube-clone-ui/main.81b1b77d23eadac5.js",
+        "youtube-clone-ui/polyfills.50898ffb04863dc0.js",
+        "youtube-clone-ui/runtime.a3d5d003c7f86666.js",
+        "youtube-clone-ui/styles.1834220043dbe5c8.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "youtube-clone-ui/assets/images/channel-icon.png",
+        "youtube-clone-ui/assets/images/dct-logo.png",
+        "youtube-clone-ui/assets/images/youtube-logo.png",
+        "youtube-clone-ui/channel-icon.49323a11ad4e4d01.png",
+        "youtube-clone-ui/videogular.a2e9f11f226cda93.ttf",
+        "youtube-clone-ui/videogular.b5fa324995460a3b.svg",
+        "youtube-clone-ui/videogular.ef07f01ce399477e.woff"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "youtube-clone-ui/assets/images/channel-icon.png": "161e09183471a706f9535d143ecd6c2352dffa69",
+    "youtube-clone-ui/assets/images/dct-logo.png": "12f791da1ddc05a504e2373c29eff8d90f1e89cb",
+    "youtube-clone-ui/assets/images/youtube-logo.png": "bd887fd8e7ab3beef32381fd5cc2c987b065ae37",
+    "youtube-clone-ui/channel-icon.49323a11ad4e4d01.png": "161e09183471a706f9535d143ecd6c2352dffa69",
+    "youtube-clone-ui/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "youtube-clone-ui/index.html": "cd3e7b0207780b454f040fecede4886942bbd57a",
+    "youtube-clone-ui/main.81b1b77d23eadac5.js": "ca4852a20370b48fe846f10e1bc373d024b203d8",
+    "youtube-clone-ui/polyfills.50898ffb04863dc0.js": "f34d99bdf3df269845157bf8420ee40f2b938d75",
+    "youtube-clone-ui/runtime.a3d5d003c7f86666.js": "169d95bb46708d14354b40f2f29b3ffd5ee7f227",
+    "youtube-clone-ui/styles.1834220043dbe5c8.css": "3657c453e98ab3561cc97fc8074a23c10d3bdbf7",
+    "youtube-clone-ui/videogular.a2e9f11f226cda93.ttf": "bb67bb29f92837ac5e2ea0bfd9fa689ad15fb887",
+    "youtube-clone-ui/videogular.b5fa324995460a3b.svg": "5f425e191f26e38cc784ef48eafebdb6d2b070db",
+    "youtube-clone-ui/videogular.ef07f01ce399477e.woff": "0e25c781426255dc473162ae7cd0fab5a5a721a4"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
