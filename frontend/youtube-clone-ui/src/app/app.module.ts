@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +28,7 @@ import {AuthModule, StsConfigLoader} from "angular-auth-oidc-client";
 import { VideoDetailsComponent } from './components/video-details/video-details.component';
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from "@angular/material/card";
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 // @ts-ignore
 @NgModule({
@@ -72,7 +73,13 @@ import {MatCardModule} from "@angular/material/card";
         useRefreshToken: true
       },
     }),
-    MatCardModule
+    MatCardModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [
 
